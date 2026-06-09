@@ -1,0 +1,268 @@
+/* ServicesStack.css — zero GSAP, pure CSS sticky + CSS transitions */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ═══════════════════════════════════════
+   SECTION
+═══════════════════════════════════════ */
+.ss-section {
+  width: 100%;
+  padding: 80px 0 140px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ═══════════════════════════════════════
+   INNER LAYOUT
+═══════════════════════════════════════ */
+.ss-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+/* ═══════════════════════════════════════
+   STICKY LABEL
+═══════════════════════════════════════ */
+.ss-label {
+  width: 160px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+
+}
+
+.ss-label h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: clamp(4rem, 7vw, 10rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: var(--glow-primary);
+}
+
+/* ═══════════════════════════════════════
+   CARDS COLUMN
+═══════════════════════════════════════ */
+.ss-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ═══════════════════════════════════════
+   CARD WRAPPER — sticky anchor
+   (top is set inline per-card so they
+    cascade rather than all pile at 60px)
+═══════════════════════════════════════ */
+.ss-wrapper {
+  position: sticky;
+  /* top set via inline style in JSX */
+}
+
+/* ═══════════════════════════════════════
+   THE CARD
+═══════════════════════════════════════ */
+.ss-card {
+  background: var(--color-bg-light);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 64px 56px 60px;
+  gap: 40px;
+  min-height: 280px;
+  border: 1px solid var(--color-border-white-alpha);
+
+  /* CSS transition replaces the GSAP scrub */
+  transform: scale(1);
+  transform-origin: top center;
+  transition: transform 0.55s cubic-bezier(0.33, 1, 0.68, 1),
+  box-shadow 0.55s ease;
+  will-change: transform;
+}
+.ss-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+
+/* Scale-down state added by IntersectionObserver */
+.ss-card.is-covered {
+  transform: scale(0.965);
+  border: 1px solid var(--color-border-light);
+}
+
+/* ═══════════════════════════════════════
+   TEXT SIDE
+═══════════════════════════════════════ */
+.ss-text {
+  flex: 0 0 52%;
+  max-width: 52%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ss-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.ss-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.ss-body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--color-text-dark);
+  max-width: 370px;
+}
+
+/* ═══════════════════════════════════════
+   IMAGE SIDE
+═══════════════════════════════════════ */
+.ss-image {
+  flex: 0 0 42%;
+  max-width: 42%;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ss-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: grayscale(20%) brightness(0.82);
+  transition: transform 0.6s ease;
+}
+
+.ss-card:hover .ss-image img {
+  transform: scale(1.04);
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — Tablet ≤1024px
+═══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .ss-inner {
+    padding: 0 28px;
+    gap: 32px;
+  }
+
+  .ss-label {
+    width: 120px;
+  }
+
+  .ss-card {
+    padding: 44px 36px;
+    min-height: 240px;
+    gap: 28px;
+  }
+
+  .ss-text {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — Mobile ≤700px
+═══════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .ss-label h2 {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: clamp(4rem, 7vw, 10rem) !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+
+  }
+
+
+}
+@media (max-width: 700px) {
+  .ss-section {
+    padding: 56px 0 100px;
+  }
+
+  .ss-inner {
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .ss-label {
+    width: 68px;
+  }
+
+  .ss-label h2 {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .ss-card {
+    flex-direction: column;
+    padding: 28px 22px;
+    min-height: unset;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .ss-text {
+    flex: none;
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .ss-image {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+    height: 180px;
+  }
+
+  .ss-title {
+    font-size: 34px;
+  }
+
+  .ss-body {
+    font-size: 13px;
+  }
+}

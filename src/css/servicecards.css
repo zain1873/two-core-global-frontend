@@ -47,7 +47,7 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: red;
+  color: var(--color-primary);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: clamp(4rem, 7vw, 10rem);

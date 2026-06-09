@@ -12,9 +12,9 @@ export const metadata = {
   applicationName: siteConfig.name,
   alternates: { canonical: absoluteUrl("/") },
   icons: {
-    icon: "/tcg-favicon.png",
-    shortcut: "/tcg-favicon.png",
-    apple: "/tcg-favicon.png",
+    icon: "/tcg-favicon.jpeg",
+    shortcut: "/tcg-favicon.jpeg",
+    apple: "/tcg-favicon.jpeg",
   },
   openGraph: {
     type: "website",

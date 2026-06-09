@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
               }}
             />
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format&fit=crop&q=80"
+              src="/assets/seo-sidebar-img.png"
               alt="Digital services team at work"
               className="relative z-10 w-full rounded-2xl object-cover"
               style={{ maxHeight: "460px", objectPosition: "center top", boxShadow: "var(--glow-primary)" }}

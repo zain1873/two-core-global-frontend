@@ -16,8 +16,7 @@ const processes = [
     ],
     description:
       "We audit your existing list, clean inactive contacts, and build precise audience segments based on demographics, behaviour, and purchase history — so every email lands with purpose.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&fit=crop",
+    image: "/assets/email-marketing-process/AUDIENCE SEGMENTATION.png",
     bg: "#0B1020",
   },
   {
@@ -32,8 +31,7 @@ const processes = [
     ],
     description:
       "We map a full email calendar aligned with your business goals — from welcome sequences and nurture flows to seasonal promotions and re-engagement campaigns.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&fit=crop",
+    image: "/assets/email-marketing-process/STRATEGY AND PLANNING.png",
     bg: "#05070D",
   },
   {
@@ -48,8 +46,7 @@ const processes = [
     ],
     description:
       "Our team crafts compelling subject lines, persuasive email copy, and responsive HTML designs that render perfectly on every device and email client.",
-    image:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=900&q=80&fit=crop",
+    image: "/assets/email-marketing-process/CONTENT AND DESIGN.png",
     bg: "#0B1020",
   },
   {
@@ -64,8 +61,7 @@ const processes = [
     ],
     description:
       "We configure your ESP, set up tracking pixels, run pre-send tests, and schedule or trigger campaigns at the optimal time for your audience to maximise deliverability and opens.",
-    image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&fit=crop",
+    image: "/assets/email-marketing-process/CAMPAIGN LAUNCH.png",
     bg: "#05070D",
   },
   {
@@ -80,8 +76,7 @@ const processes = [
     ],
     description:
       "We review open rates, click-through rates, conversions, and revenue per email — then apply A/B test learnings to continuously improve every future send.",
-    image:
-      "https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=900&q=80&fit=crop",
+    image: "/assets/email-marketing-process/ANALYZE AND OPTIMIZE.png",
     bg: "#0B1020",
   },
 ];

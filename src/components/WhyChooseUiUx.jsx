@@ -62,7 +62,7 @@ export default function WhyChooseUiUx() {
 
           <div className="wcuu-img-wrap">
             <img
-              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&q=80&auto=format&fit=crop"
+              src="/assets/uiux-sideby.png"
               alt="UI/UX Design process"
               className="wcuu-img"
             />

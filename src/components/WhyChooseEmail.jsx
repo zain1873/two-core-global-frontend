@@ -63,7 +63,7 @@ export default function WhyChooseEmail() {
               }}
             />
             <img
-              src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
+              src="/assets/email-marketing-sidebar.png"
               alt="Email marketing strategy"
               className="relative z-10 w-full rounded-2xl object-cover"
               style={{

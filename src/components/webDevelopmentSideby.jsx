@@ -264,7 +264,7 @@ export default function WebDevelopmentSideby() {
           >
             <div className="tao-preview-card">
               <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&q=80&auto=format&fit=crop"
+                src="/assets/web-dev-sidebar.png"
                 alt="App Development"
                 className="tao-preview-image"
               />

@@ -16,8 +16,7 @@ const processes = [
     ],
     description:
       "We dig into your target audience, competitors, and market data to define the exact personas, platforms, and keywords your paid campaigns should target for maximum ROI.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&fit=crop",
+    image: "/assets/paid-advertising-process/AUDIENCE AND MARKET RESEARCH.png",
     bg: "#0B1020",
     accent: "#7CFF00",
   },
@@ -33,8 +32,7 @@ const processes = [
     ],
     description:
       "We build a full-funnel paid strategy — mapping ad types, budgets, bidding models, and targeting layers to your conversion goals across Google, Meta, YouTube, and TikTok.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&fit=crop",
+    image: "/assets/paid-advertising-process/compagin strategy.png",
     bg: "#05070D",
     accent: "#7CFF00",
   },
@@ -50,8 +48,7 @@ const processes = [
     ],
     description:
       "Our team crafts scroll-stopping visuals, compelling headlines, and persuasive ad copy designed to capture attention and drive action at every stage of the funnel.",
-    image:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=900&q=80&fit=crop",
+    image: "/assets/paid-advertising-process/AD CREATIVE AND COPY.png",
     bg: "#0B1020",
     accent: "#7CFF00",
   },
@@ -67,8 +64,7 @@ const processes = [
     ],
     description:
       "We launch campaigns with robust tracking in place and run systematic A/B tests on creatives, audiences, and landing pages to find the winning combinations fast.",
-    image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&fit=crop",
+    image: "/assets/paid-advertising-process/LAUNCHESTING.png",
     bg: "#05070D",
     accent: "#7CFF00",
   },
@@ -84,8 +80,7 @@ const processes = [
     ],
     description:
       "We continuously monitor performance metrics, cut waste, and reallocate budget to top performers — then scale what's working to compound your returns over time.",
-    image:
-      "https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=900&q=80&fit=crop",
+    image: "/assets/paid-advertising-process/OPTIMIZE & SCALE.png",
     bg: "#0B1020",
     accent: "#7CFF00",
   },

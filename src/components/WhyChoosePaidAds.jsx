@@ -78,7 +78,7 @@ export default function WhyChoosePaidAds() {
               }}
             />
             <img
-              src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&auto=format&fit=crop&q=80"
+              src="/assets/paid-advertising-sidebar.png"
               alt="Paid advertising analytics"
               className="relative z-10 w-full rounded-2xl object-cover"
               style={{

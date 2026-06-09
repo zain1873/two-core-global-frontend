@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
               }}
             />
             <img
-              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop&q=80"
+              src="/assets/social-media-sidebar.png"
               alt="Digital services team at work"
               className="relative z-10 w-full rounded-2xl object-cover"
               style={{ maxHeight: "460px", objectPosition: "center top", boxShadow: "var(--glow-primary)" }}

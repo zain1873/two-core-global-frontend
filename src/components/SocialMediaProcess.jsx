@@ -16,8 +16,7 @@ const processes = [
     ],
     description:
       "We analyze your current social presence, competitors, and target audience to build a channel-specific strategy — defining brand voice, content pillars, posting cadence, and platform priorities that align with your business goals.",
-    image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=900&q=80&fit=crop",
+    image: "/assets/social-media-process/BRAND AUDIT AND STRATEGY.png",
     bg: "#0B1020",
     accent: "#7CFF00",
   },
@@ -33,8 +32,7 @@ const processes = [
     ],
     description:
       "We build a detailed monthly content calendar — mapping post types, formats, themes, and campaign hooks across every platform so your feed stays consistent, strategic, and aligned with key dates and trends.",
-    image:
-      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=900&q=80&fit=crop",
+    image: "/assets/social-media-process/CONTENT PLANNING.png",
     bg: "#05070D",
     accent: "#7CFF00",
   },
@@ -50,8 +48,7 @@ const processes = [
     ],
     description:
       "Our creative team produces scroll-stopping graphics, reels, carousels, and copy that reflects your brand identity — crafted specifically for each platform's format, audience behaviour, and algorithm preferences.",
-    image:
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80&fit=crop",
+    image: "/assets/social-media-process/CONTENT CREATION.png",
     bg: "#0B1020",
     accent: "#7CFF00",
   },
@@ -67,8 +64,7 @@ const processes = [
     ],
     description:
       "We handle scheduled publishing at peak engagement windows, respond to comments and DMs, and actively engage with your community — turning followers into loyal brand advocates through genuine, timely interaction.",
-    image:
-      "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&q=80&fit=crop",
+    image: "/assets/social-media-process/pubblishing and community.png",
     bg: "#05070D",
     accent: "#7CFF00",
   },
@@ -84,8 +80,7 @@ const processes = [
     ],
     description:
       "We track reach, engagement, follower growth, and conversions with monthly performance reports — using data to continuously refine content strategy, double down on what works, and compound your social media growth.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&fit=crop",
+    image: "/assets/social-media-process/ANALYTICS AND GROWTH.png",
     bg: "#0B1020",
     accent: "#7CFF00",
   },

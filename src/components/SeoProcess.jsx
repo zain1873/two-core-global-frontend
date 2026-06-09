@@ -16,8 +16,7 @@ const processes = [
     ],
     description:
       "We conduct a thorough website review to identify areas for improvement. You'll get a detailed keyword list, competitor analysis, and a full performance report.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&fit=crop",
+    image: "/assets/seo-process/WEBSITE AUDIT.png",
     bg: "#0B1020",
   },
   {
@@ -32,8 +31,7 @@ const processes = [
     ],
     description:
       "We enhance user experience across 100+ devices with link building, content optimization, speed improvements, and local SEO to boost your visibility.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&fit=crop",
+    image: "/assets/seo-process/CUSTOM SEO STRATEGY.png",
     bg: "#05070D",
   },
   {
@@ -48,8 +46,7 @@ const processes = [
     ],
     description:
       "Our team follows search engine best practices to refine strategies, improve rankings, and drive high-quality traffic to your site.",
-    image:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=900&q=80&fit=crop",
+    image: "/assets/seo-process/COUNTIONUS OPTIMIZED.png",
     bg: "#0B1020",
   },
   {
@@ -64,8 +61,7 @@ const processes = [
     ],
     description:
       "Our expert writers create engaging, high-quality content that aligns with SEO standards to improve search performance and user engagement.",
-    image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=80&fit=crop",
+    image: "/assets/seo-process/SEO OPTIMIZED CONTENT.png",
     bg: "#05070D",
   },
   {
@@ -80,8 +76,7 @@ const processes = [
     ],
     description:
       "Stay informed with clear, data-driven reports that track progress and show real growth in traffic, rankings, and conversions.",
-    image:
-      "https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=900&q=80&fit=crop",
+    image: "/assets/seo-process/TRANSPARENT REPORTING.png",
     bg: "#0B1020",
   },
 ];

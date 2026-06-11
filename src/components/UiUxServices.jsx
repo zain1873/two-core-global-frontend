@@ -15,7 +15,7 @@ const services = [
       "User persona development",
       "Journey mapping & pain point audit",
     ],
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&q=80&auto=format&fit=crop",
+    image: "/assets/uiux-page/user research.png",
     imageAlt: "UX Research & Discovery",
   },
   {
@@ -29,7 +29,7 @@ const services = [
       "Low-fidelity wireframing",
       "Content hierarchy & labelling",
     ],
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=900&q=80&auto=format&fit=crop",
+    image: "/assets/uiux-page/uk architecture.png",
     imageAlt: "UX Wireframing & Architecture",
   },
   {
@@ -43,7 +43,7 @@ const services = [
       "Dark / light mode variants",
       "Micro-interaction specifications",
     ],
-    image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=900&q=80&auto=format&fit=crop",
+    image: "/assets/uiux-page/ui visual design.png",
     imageAlt: "UI Visual Design",
   },
   {
@@ -57,7 +57,7 @@ const services = [
       "Heatmap & session analysis",
       "Developer-ready design handoff",
     ],
-    image: "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=900&q=80&auto=format&fit=crop",
+    image: "/assets/uiux-page/promote and testing.png",
     imageAlt: "Prototyping & Testing",
   },
 ];

@@ -263,7 +263,7 @@ export default function AppDevelopmentSideby() {
           >
             <div className="tao-preview-card">
               <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&q=80&auto=format&fit=crop"
+                src="/assets/app-develop-sideby.png"
                 alt="App Development"
                 className="tao-preview-image"
               />

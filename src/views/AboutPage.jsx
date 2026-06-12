@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import "../css/PagesCss/webDev.css";
 import Navbar from "../components/navbar";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";

@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import "../css/statsCounter.css";
 
 const STATS = [
-  { target: 3000, suffix: "+", label: "Successful Projects" },
-  { target: 23, suffix: "+", label: "Countries Supported" },
-  { target: 250, suffix: "+", label: "Active Clients" },
-  { target: 15, suffix: "+", label: "Years of Enablement Experience" },
+  { target: 1200, suffix: "+", label: "Successful Projects" },
+  { target: 5, suffix: "+", label: "Countries Supported" },
+  { target: 50, suffix: "+", label: "Active Clients" },
+  { target: 5, suffix: "+", label: "Years of Enablement Experience" },
 ];
 
 function useCountUp(target, duration, start) {

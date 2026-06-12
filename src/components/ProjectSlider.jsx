@@ -3,6 +3,9 @@
 import { useEffect, useRef, useState } from 'react';
 import "../css/projectSlider.css"
 const noorrixProject = "/assets/noorrix-project.png";
+const cycleProject = "/assets/cycle-project.jpeg";
+const parallelProject = "/assets/paralell-project.jpeg";
+const workoutProject = "/assets/workout-project.jpg";
 
 /* ─── DATA ─── */
 const CARDS = [
@@ -16,26 +19,29 @@ const CARDS = [
     number: '01',
   },
   {
-    title: 'Pixel Studio',
+    title: 'Pure Cycles',
     year: '2025',
     tags: ['UI/UX', 'Brand Identity'],
-    image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=1400&q=80&fit=crop',
+    image: cycleProject,
+    link: 'https://www.purecycles.com/',
     accent: '#7CFF00',
     number: '02',
   },
   {
-    title: 'CloudSync',
+    title: 'Parallel',
     year: '2024',
     tags: ['SaaS Platform', 'Dashboard'],
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&q=80&fit=crop',
+    image: parallelProject,
+    link: 'https://www.useparallel.com/',
     accent: '#7CFF00',
     number: '03',
   },
   {
-    title: 'Vision Tech',
+    title: '8fit',
     year: '2024',
     tags: ['Development', 'Mobile App'],
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=80&fit=crop',
+    image: workoutProject,
+    link: 'https://apps.apple.com/us/app/8fit-workouts-meal-planner/id866617777',
     accent: '#7CFF00',
     number: '04',
   },

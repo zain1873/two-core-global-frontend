@@ -54,7 +54,6 @@ export default function SEOPackages() {
           {plans.map((plan) => (
             <div key={plan.name} className="seo-plan-card">
               <h2>{plan.name}</h2>
-              <p className="price">{plan.price}</p>
             </div>
           ))}
         </div>
@@ -93,7 +92,6 @@ export default function SEOPackages() {
               {/* Card header */}
               <div className="seo-mobile-card-header">
                 <h2>{plan.name}</h2>
-                <p className="price">{plan.price}</p>
               </div>
 
               {/* Keywords */}
@@ -108,6 +106,13 @@ export default function SEOPackages() {
               ))}
             </div>
           ))}
+        </div>
+
+        {/* CTA */}
+        <div className="seo-cta-row">
+          <a href="/contact" className="seo-cta-btn">
+            Get a Custom Quote →
+          </a>
         </div>
 
       </div>

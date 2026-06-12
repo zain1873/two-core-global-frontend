@@ -52,7 +52,6 @@ export default function PaidAdsPakages() {
           {plans.map((plan) => (
             <div key={plan.name} className="seo-plan-card">
               <h2>{plan.name}</h2>
-              <p className="price">{plan.price}</p>
             </div>
           ))}
         </div>
@@ -86,8 +85,7 @@ export default function PaidAdsPakages() {
             <div key={plan.name} className="seo-mobile-card">
               <div className="seo-mobile-card-header">
                 <h2>{plan.name}</h2>
-                <p className="price">{plan.price}</p>
-              </div>
+                </div>
 
               <div className="seo-mobile-keyword">{plan.budget}</div>
 

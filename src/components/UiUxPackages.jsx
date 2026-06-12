@@ -95,11 +95,6 @@ export default function UiUxPackages() {
                 <p className="uiux-pkg-tagline">{plan.tagline}</p>
               </div>
 
-              <div className="uiux-pkg-price-row">
-                <span className="uiux-pkg-currency">PKR</span>
-                <span className="uiux-pkg-price">{plan.price}</span>
-                <span className="uiux-pkg-period">{plan.period}</span>
-              </div>
 
               <div className="uiux-pkg-divider" />
 

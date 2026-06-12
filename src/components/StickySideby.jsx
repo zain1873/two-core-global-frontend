@@ -4,63 +4,59 @@ import { useEffect, useRef, useState } from "react";
 
 const sections = [
   {
-    phase: "Lead Developer",
-    title: "Michael",
-    desc: "Alex leads frontend and backend development with a focus on building scalable web applications, modern UI experiences, and high-performance systems for clients worldwide.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&q=80&auto=format&fit=crop",
+    phase: "CEO & Digital Marketing",
+    title: "Ayesha",
+    desc: "Ayesha drives the company's digital marketing vision and SEO strategy, leading growth initiatives that connect brands with their audiences through data-driven campaigns and measurable results.",
+    image: "/assets/avatar/ayesha.png",
     linkedin: "https://linkedin.com",
     features: [
-      "Frontend & Backend Development",
-      "React.js & Django Specialist",
-      "Modern UI Architecture",
-      "REST API Development",
-      "Performance Optimization",
+      "Digital Marketing Strategy",
+      "SEO & SEM Leadership",
+      "Brand Growth & Awareness",
+      "Team Leadership & Vision",
+      "Content & Campaign Strategy",
     ],
   },
   {
-    phase: "UI/UX Designer",
-    title: "Sarah Williams",
-    desc: "Sarah creates visually engaging and user-friendly digital experiences with a strong focus on clean interfaces, modern branding, and intuitive design systems.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80&auto=format&fit=crop",
+    phase: "Graphic Designer",
+    title: "Nosheen Liaqat", 
+    desc: "Nosheen crafts compelling visual identities and design systems that communicate brand stories with clarity, creativity, and consistency across digital and print media.",
+    image: "/assets/avatar/nosheen liaqat.png",
     linkedin: "https://linkedin.com",
     features: [
-      "Modern UI Design",
-      "User Experience Research",
-      "Wireframing & Prototyping",
-      "Mobile-First Design",
-      "Brand Identity Systems",
+      "Brand Identity Design",
+      "Visual Communication",
+      "Adobe Creative Suite",
+      "Motion Graphics",
+      "Print & Digital Design",
     ],
   },
   {
-    phase: "Backend Engineer",
-    title: "Daniel Carter",
-    desc: "Daniel develops secure and scalable backend infrastructures, ensuring smooth application performance, optimized databases, and reliable cloud systems.",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80&auto=format&fit=crop",
+    phase: "Full Stack Developer",
+    title: "M Zain Saleem",
+    desc: "Zain builds end-to-end web solutions using Python, Django, Django REST Framework, and React — delivering scalable APIs, performant frontends, and clean system architecture.",
+    image: "/assets/avatar/zain saleem.png",
     linkedin: "https://linkedin.com",
     features: [
-      "Python Django Development",
-      "API Architecture",
-      "Database Management",
-      "Cloud Infrastructure",
-      "Authentication & Security",
+      "Python & Django Development",
+      "React.js Frontend",
+      "Django REST Framework",
+      "Database Architecture",
+      "API Development & Integration",
     ],
   },
   {
-    phase: "Project Manager",
-    title: "Emily Johnson",
-    desc: "Emily manages project workflows, client communication, and team collaboration to ensure successful product delivery with strategic planning and execution.",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200&q=80&auto=format&fit=crop",
+    phase: "SEO Specialist",
+    title: "Omar Farooq",
+    desc: "Omar drives organic growth through technical SEO, keyword strategy, and on-page optimization — helping clients rank higher, attract quality traffic, and convert visitors into customers.",
+    image: "/assets/avatar/omar farooq.png",
     linkedin: "https://linkedin.com",
     features: [
-      "Project Planning",
-      "Team Coordination",
-      "Client Communication",
-      "Workflow Management",
-      "Agile Development Process",
+      "Technical SEO Audits",
+      "Keyword Research & Strategy",
+      "On-Page Optimization",
+      "Link Building",
+      "SEO Analytics & Reporting",
     ],
   },
 ];
@@ -92,6 +88,7 @@ function CardHeightSync() {
 export default function StoryTellingSection() {
   const sectionRef = useRef(null);
   const [progress, setProgress] = useState(0);
+  const activeIndex = Math.round(progress * (sections.length - 1));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -453,7 +450,7 @@ export default function StoryTellingSection() {
             <div className="image-stack">
               <div className="image-overlay">
                 <a
-                  href="#"
+                  href={sections[activeIndex].linkedin}
                   className="linkedin-btn"
                   target="_blank"
                   rel="noopener noreferrer"

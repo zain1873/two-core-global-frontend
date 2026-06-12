@@ -52,7 +52,6 @@ export default function EmailPakages() {
           {plans.map((plan) => (
             <div key={plan.name} className="seo-plan-card">
               <h2>{plan.name}</h2>
-              <p className="price">{plan.price}</p>
             </div>
           ))}
         </div>
@@ -86,7 +85,6 @@ export default function EmailPakages() {
             <div key={plan.name} className="seo-mobile-card">
               <div className="seo-mobile-card-header">
                 <h2>{plan.name}</h2>
-                <p className="price">{plan.price}</p>
               </div>
 
               <div className="seo-mobile-keyword">{plan.subscribers}</div>
@@ -104,10 +102,7 @@ export default function EmailPakages() {
         {/* CTA */}
         <div className="seo-cta-row">
           <a href="/contact" className="seo-cta-btn">
-            Get a Custom Quote
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+            Get a Custom Quote →
           </a>
         </div>
 

@@ -11,6 +11,9 @@ import "../css/PagesCss/webDev.css";
 import "../css/PagesCss/Portfolio.css";
 const tcgBanner = "/assets/tcg-banner.jpg";
 const noorrixProjectImg = "/assets/noorrix-project.png";
+const cycleProjectImg = "/assets/cycle-project.jpeg";
+const parallelProjectImg = "/assets/paralell-project.jpeg";
+const workoutProjectImg = "/assets/workout-project.jpg";
 
 const PROJECTS = [
   {
@@ -32,27 +35,30 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: "Pixel Studio",
+    title: "Pure Cycles",
     year: "2025",
     category: "Design & Branding",
     tags: ["UI/UX", "Brand Identity"],
-    image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=800&q=80&fit=crop",
+    image: cycleProjectImg,
+    link: "https://www.purecycles.com/",
   },
   {
     id: 3,
-    title: "CloudSync",
+    title: "Parallel",
     year: "2024",
     category: "Web Development",
     tags: ["SaaS Platform", "Dashboard"],
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80&fit=crop",
+    image: parallelProjectImg,
+    link: "https://www.useparallel.com/",
   },
   {
     id: 4,
-    title: "Vision Tech",
+    title: "8fit",
     year: "2024",
     category: "Mobile App",
     tags: ["Development", "Mobile App"],
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop",
+    image: workoutProjectImg,
+    link: "https://apps.apple.com/us/app/8fit-workouts-meal-planner/id866617777",
   },
   {
     id: 5,
@@ -196,16 +202,6 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
-
-      {/* Stats Strip */}
-      <div className="pf-stats">
-        {STATS.map((s) => (
-          <div key={s.label} className="pf-stat-item">
-            <div className="pf-stat-number">{s.number}</div>
-            <div className="pf-stat-label">{s.label}</div>
-          </div>
-        ))}
-      </div>
 
       {/* Projects Grid */}
       <section className="pf-projects-section">

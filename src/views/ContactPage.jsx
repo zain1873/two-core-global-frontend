@@ -47,38 +47,70 @@ export default function ContactPage() {
             </p>
 
             <div className="contact-banner-actions">
-              <button className="contact-btn-primary">Send a Message</button>
-              <button className="contact-btn-secondary">Call Us ↗</button>
+              <a
+                href="https://wa.me/923001234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-btn-primary"
+              >
+                Send a Message
+              </a>
+              <a href="tel:+923001234567" className="contact-btn-secondary">
+                Call Us ↗
+              </a>
             </div>
           </div>
 
           {/* Right Info Card */}
           <div className="contact-banner-card">
-            <div className="contact-info-item">
-              <div className="contact-info-icon">✉</div>
+            <a
+              href="mailto:hello@twocoreglobal.com"
+              className="contact-info-item contact-info-link"
+            >
+              <div className="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="3" />
+                  <polyline points="2,4 12,13 22,4" />
+                </svg>
+              </div>
               <div className="contact-info-text">
                 <span className="contact-info-label">Email Us</span>
-                <span className="contact-info-value">twocoreglobal@gmail.com</span>
+                <span className="contact-info-value">hello@twocoreglobal.com</span>
               </div>
-            </div>
+            </a>
 
             <div className="contact-card-divider"></div>
 
-            <div className="contact-info-item">
-              <div className="contact-info-icon">📍</div>
+            <a
+              href="https://maps.google.com/?q=G1+Market,+Johar+Town,+Lahore"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-info-item contact-info-link"
+            >
+              <div className="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+              </div>
               <div className="contact-info-text">
                 <span className="contact-info-label">Our Office</span>
-                <span className="contact-info-value">Worldwide — Remote Friendly</span>
+                <span className="contact-info-value">G1 Market, Johar Town, Lahore</span>
               </div>
-            </div>
+            </a>
 
             <div className="contact-card-divider"></div>
 
             <div className="contact-info-item">
-              <div className="contact-info-icon">🕐</div>
+              <div className="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+              </div>
               <div className="contact-info-text">
                 <span className="contact-info-label">Working Hours</span>
-                <span className="contact-info-value">Mon – Fri, 9am – 6pm</span>
+                <span className="contact-info-value">Mon – Sat, 10am – 7pm</span>
               </div>
             </div>
 

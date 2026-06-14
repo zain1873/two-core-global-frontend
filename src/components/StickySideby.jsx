@@ -55,8 +55,8 @@ const sections = [
       "Technical SEO Audits",
       "Keyword Research & Strategy",
       "On-Page Optimization",
-      "Link Building",
-      "SEO Analytics & Reporting",
+      "Link Building", 
+      "SEO Analytics & Reporting", 
     ],
   },
 ];

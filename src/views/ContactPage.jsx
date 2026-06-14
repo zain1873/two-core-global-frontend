@@ -6,7 +6,8 @@ import { Link } from "@/lib/link";
 import Contact from "../components/contactForm";
 import Footer from "../components/Footer";
 import CTASection from "../components/CtaSection";
-import ContactStats from "../components/ContactStats";
+import StatsCounter from "../components/StatsCounter";
+
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/Faqs";
 
@@ -130,7 +131,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ContactStats />
+      <StatsCounter/>
       <CTASection />
       <Contact />
       <Testimonials />

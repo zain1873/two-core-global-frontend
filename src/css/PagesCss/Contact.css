@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url("https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&q=80");
+  background-image: url("/assets/contact%20banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

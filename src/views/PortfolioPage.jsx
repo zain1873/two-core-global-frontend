@@ -9,7 +9,7 @@ import TestimonialSlider from "../components/Testimonials";
 import CTASection from "../components/CtaSection";
 import "../css/PagesCss/webDev.css";
 import "../css/PagesCss/Portfolio.css";
-const tcgBanner = "/assets/tcg-banner.jpg";
+const tcgBanner = "/assets/portfolio%20banner.png";
 const noorrixProjectImg = "/assets/noorrix-project.png";
 const cycleProjectImg = "/assets/cycle-project.jpeg";
 const parallelProjectImg = "/assets/paralell-project.jpeg";

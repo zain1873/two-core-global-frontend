@@ -182,6 +182,24 @@ export const routes = [
     keywords: ["video production", "motion graphics", "brand video", "video marketing", "animation"],
     priority: 0.8,
   },
+  {
+    path: "/privacy-policy",
+    file: "PrivacyPolicyPage",
+    title: "Privacy Policy | Two Core Global",
+    description:
+      "Read the Two Core Global Privacy Policy to understand how we collect, use, protect and share your personal information when you use our website and services.",
+    keywords: ["privacy policy", "data protection", "personal information", "cookies", "Two Core Global"],
+    priority: 0.3,
+  },
+  {
+    path: "/terms-and-conditions",
+    file: "TermsPage",
+    title: "Terms & Conditions | Two Core Global",
+    description:
+      "Review the Terms & Conditions that govern the use of the Two Core Global website and services, including client responsibilities, payments and intellectual property.",
+    keywords: ["terms and conditions", "terms of service", "legal", "agreement", "Two Core Global"],
+    priority: 0.3,
+  },
 ];
 
 export const routeByPath = Object.fromEntries(routes.map((r) => [r.path, r]));

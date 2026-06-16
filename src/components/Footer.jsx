@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="footer__inner">
         <div className="footer__left">
           <h2 className="footer__headline">Do It Once. Do It Right.</h2>
-          <a href="#talk" className="footer__cta-btn">
+          <a href="/contact" className="footer__cta-btn">
             Let's Talk <span className="footer__cta-arrow">→</span>
           </a>
           <p className="footer__desc">
@@ -70,8 +70,8 @@ const Footer = () => {
               <li><a href="#blog">Blog</a></li>
               <li><a href="#industry-insights">Industry Insights</a></li>
               <li><a href="#faqs">FAQs</a></li>
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#terms">Terms &amp; Conditions</a></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/terms-and-conditions">Terms &amp; Conditions</Link></li>
             </ul>
           </div>
           <div className="footer__col">

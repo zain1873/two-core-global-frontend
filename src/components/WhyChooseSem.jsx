@@ -43,13 +43,7 @@ export default function WhyChooseUs() {
           <div className="relative w-full max-w-md" style={{ border: "1px solid var(--color-border-primary)", borderRadius: "1rem", padding: "4px", background: "var(--color-bg-secondary)" }}>
             {/* blob behind image */}
             <div
-              className="absolute inset-0 z-0 img-bg"
-              style={{
-                background: "var(--color-primary)",
-                opacity: 0.1,
-                borderRadius: "60% 40% 55% 45% / 50% 60% 40% 50%",
-                transform: "scale(1.08) translate(4%, 2%)",
-              }}
+
             />
             <img
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80"

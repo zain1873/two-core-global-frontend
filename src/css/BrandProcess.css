@@ -1,0 +1,178 @@
+/* ── Brand Identity Process Section ── */
+
+.brand-process {
+  background: var(--color-bg-secondary);
+  padding: 100px 40px 110px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.brand-process-header {
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+.brand-process-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 22px;
+  border: 1px solid rgba(0, 245, 255, 0.45);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  background: rgba(0, 245, 255, 0.05);
+  margin-bottom: 28px;
+}
+
+.brand-process-title {
+  font-size: clamp(36px, 5.5vw, 66px);
+  font-weight: 800;
+  color: var(--color-heading);
+  line-height: 1.1;
+  margin: 0 0 22px;
+  letter-spacing: -1px;
+}
+
+.brand-process-title-accent {
+  color: var(--color-primary);
+}
+
+.brand-process-subtitle {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.brand-process-timeline {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.brand-process-line {
+  position: absolute;
+  top: 44px;
+  left: calc(100% / 12);
+  right: calc(100% / 12);
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(124, 255, 0, 0.9),
+    rgba(124, 255, 0, 0.35) 50%,
+    rgba(124, 255, 0, 0.9)
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.brand-process-steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.brand-process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.brand-process-circle-wrap {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.brand-process-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-heading);
+  box-shadow:
+    0 0 0 9px rgba(124, 255, 0, 0.07),
+    0 0 24px rgba(124, 255, 0, 0.22),
+    inset 0 0 20px rgba(124, 255, 0, 0.06);
+  position: relative;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.brand-process-step:hover .brand-process-circle {
+  box-shadow:
+    0 0 0 11px rgba(124, 255, 0, 0.12),
+    0 0 36px rgba(124, 255, 0, 0.38),
+    inset 0 0 24px rgba(124, 255, 0, 0.1);
+  border-color: var(--color-primary-light);
+}
+
+.brand-process-number {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(124, 255, 0, 0.5);
+  line-height: 1;
+}
+
+.brand-process-step-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0 0 10px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.brand-process-step-desc {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  text-align: center;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .brand-process { padding: 80px 30px 90px; }
+  .brand-process-steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px 0;
+  }
+  .brand-process-line { display: none; }
+}
+
+@media (max-width: 640px) {
+  .brand-process { padding: 64px 20px 72px; }
+  .brand-process-header { margin-bottom: 60px; }
+  .brand-process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 0;
+  }
+  .brand-process-subtitle { font-size: 15px; }
+}
+
+@media (max-width: 400px) {
+  .brand-process-steps {
+    grid-template-columns: 1fr;
+    gap: 40px 0;
+  }
+}

@@ -5,10 +5,15 @@ import Navbar from "../components/navbar";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
-import TestimonialSlider from "../components/Testimonials";
 import CTASection from "../components/CtaSection";
-const brandIdentityBanner = "/assets/brand-identity.png";
+import WhyChooseBrand from "../components/WhyChooseBrand";
+import BrandServices from "../components/BrandServices";
+import BrandProcess from "../components/BrandProcess";
+import BrandPackages from "../components/BrandPackages";
 import "../css/PagesCss/webDev.css";
+import "../css/PagesCss/BrandIdentity.css";
+
+const brandIdentityBanner = "/assets/brand-identity.png";
 
 function BrandIdentityPage() {
   return (
@@ -31,11 +36,18 @@ function BrandIdentityPage() {
               items={[{ label: "Home", to: "/" }, { label: "Brand Identity" }]}
             />
             <h1>Brand Identity & Design Services</h1>
+            <p className="brand-banner-sub">
+              Strategic branding that builds recognition, earns trust, and sets you apart in every market.
+            </p>
             <button className="banner-btn">Build Your Brand</button>
           </div>
         </div>
       </section>
 
+      <WhyChooseBrand />
+      <BrandServices />
+      <BrandProcess />
+      <BrandPackages />
       <CTASection />
       <Contact />
       <Footer />

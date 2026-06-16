@@ -101,7 +101,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__logo-center">
-        <img src={logo} alt="Two Core Global" />
+        <Link to="/"><img src={logo} alt="Two Core Global" /></Link>
       </div>
 
       <div className="footer__copyright">

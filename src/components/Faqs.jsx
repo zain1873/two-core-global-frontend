@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Link } from "@/lib/link";
 
 const faqs = [
   {
@@ -43,11 +44,10 @@ const styles = `
 
   .faq-page {
     min-height: 100vh;
-    background: var(--color-bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem rem;
+    padding: 3rem 1.5rem;
   }
 
   .faq-card {
@@ -414,13 +414,26 @@ const styles = `
   }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 700px) {
+  @media (max-width: 1024px) {
+    .faq-card {
+      grid-template-columns: 260px 1fr;
+      padding: 60px 40px 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .faq-page {
+      padding: 2rem 1rem;
+      align-items: flex-start;
+    }
+
     .faq-card {
       grid-template-columns: 1fr;
+      padding: 40px 24px 56px;
     }
 
     .faq-left {
-      padding: 2.5rem 1.75rem;
+      padding: 2rem 1.75rem;
     }
 
     .left-heading {
@@ -428,16 +441,31 @@ const styles = `
     }
 
     .left-desc {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .left-tagline {
+      margin-bottom: 1.25rem;
+    }
+
+    .left-stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .faq-right {
       padding: 1.75rem 1.5rem 1.5rem;
     }
 
+    .faq-answer-inner {
+      padding: 0 28px 16px;
+    }
+
     .contact-strip {
       flex-direction: column;
       align-items: flex-start;
+      gap: 14px;
     }
 
     .contact-btn {
@@ -446,13 +474,30 @@ const styles = `
     }
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     .faq-page {
-      padding: 1.5rem 1rem;
+      padding: 1.25rem 0.75rem;
+    }
+
+    .faq-card {
+      padding: 28px 16px 40px;
+    }
+
+    .faq-left {
+      padding: 1.75rem 1.25rem;
     }
 
     .left-heading {
       font-size: 1.5rem;
+    }
+
+    .left-stats {
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .faq-right {
+      padding: 1.5rem 1rem 1.25rem;
     }
 
     .faq-right-header {
@@ -463,6 +508,23 @@ const styles = `
 
     .faq-search {
       width: 100%;
+    }
+
+    .faq-answer-inner {
+      padding: 0 16px 14px;
+    }
+
+    .faq-q-text {
+      font-size: 13px;
+    }
+
+    .contact-strip {
+      padding: 0.875rem 1rem;
+    }
+
+    .contact-btn {
+      padding: 10px 16px;
+      font-size: 12px;
     }
   }
 `;
@@ -566,7 +628,7 @@ export default function FAQ() {
                   <span>Our support team is ready to help.</span>
                 </div>
               </div>
-              <button className="contact-btn">Contact us →</button>
+              <Link to="/contact" className="contact-btn">Contact us →</Link>
             </div>
           </div>
 

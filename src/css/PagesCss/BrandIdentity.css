@@ -2,6 +2,14 @@
    Brand Identity Page — Page-Level Styles
    ======================================== */
 
+.brand-identity-page .brand-banner-sub {
+  font-size: 17px;
+  color: #d1d5db;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
 .brand-services-section {
   background: var(--color-bg);
   padding: 80px 24px;

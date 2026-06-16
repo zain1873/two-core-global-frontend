@@ -69,13 +69,6 @@ export default function WhyChoosePaidAds() {
             }}
           >
             <div
-              className="absolute inset-0 z-0"
-              style={{
-                background: "var(--color-primary)",
-                opacity: 0.08,
-                borderRadius: "60% 40% 55% 45% / 50% 60% 40% 50%",
-                transform: "scale(1.08) translate(4%, 2%)",
-              }}
             />
             <img
               src="/assets/paid-advertising-sidebar.png"

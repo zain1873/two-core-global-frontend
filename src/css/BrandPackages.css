@@ -1,0 +1,256 @@
+/* ── Brand Identity Packages / Pricing ── */
+
+.brand-pkgs-section {
+  background: var(--color-bg);
+  padding: 104px 40px 112px;
+}
+
+.brand-pkgs-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.brand-pkgs-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+
+.brand-pkgs-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.brand-pkgs-heading {
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 900;
+  color: var(--color-heading);
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.brand-pkgs-accent {
+  color: var(--color-primary);
+}
+
+.brand-pkgs-sub {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.brand-pkgs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+/* ── Base card ── */
+.brand-pkg-card {
+  background: var(--color-bg);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 36px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+
+.brand-pkg-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 255, 0, 0.25);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Popular card ── */
+.brand-pkg-card--popular {
+  border-color: rgba(124, 255, 0, 0.35);
+  background: var(--color-bg);
+  transform: translateY(-12px);
+  box-shadow:
+    0 0 0 1px rgba(124, 255, 0, 0.2),
+    0 32px 72px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(124, 255, 0, 0.08);
+}
+.brand-pkg-card--popular::before {
+  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+}
+.brand-pkg-card--popular:hover {
+  transform: translateY(-18px);
+  box-shadow:
+    0 0 0 1px rgba(124, 255, 0, 0.3),
+    0 40px 80px rgba(0, 0, 0, 0.55),
+    0 0 80px rgba(124, 255, 0, 0.12);
+}
+
+.brand-pkg-popular-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  background: var(--color-primary);
+  padding: 5px 12px;
+  border-radius: 50px;
+  box-shadow: 0 0 14px rgba(124, 255, 0, 0.55);
+}
+
+.brand-pkg-top {
+  margin-bottom: 24px;
+}
+
+.brand-pkg-name {
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--color-heading);
+  font-family: "Syne", sans-serif;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.brand-pkg-tagline {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.brand-pkg-divider {
+  height: 1px;
+  background: linear-gradient(to right, rgba(124, 255, 0, 0.2), transparent);
+  margin-bottom: 24px;
+}
+
+.brand-pkg-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.brand-pkg-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13.5px;
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.brand-pkg-check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(124, 255, 0, 0.1);
+  border: 1px solid rgba(124, 255, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.brand-pkg-card--popular .brand-pkg-check {
+  background: rgba(124, 255, 0, 0.15);
+  border-color: rgba(124, 255, 0, 0.4);
+}
+
+.brand-pkg-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgba(124, 255, 0, 0.35);
+  background: transparent;
+  color: var(--color-primary);
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.brand-pkg-cta:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 24px rgba(124, 255, 0, 0.4);
+}
+
+.brand-pkg-card--popular .brand-pkg-cta {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(124, 255, 0, 0.35);
+}
+.brand-pkg-card--popular .brand-pkg-cta:hover {
+  background: var(--color-primary-light);
+  box-shadow: 0 0 32px rgba(124, 255, 0, 0.55);
+}
+
+.brand-pkgs-note {
+  text-align: center;
+  margin: 48px 0 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.brand-pkgs-note-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-shadow 0.2s;
+}
+.brand-pkgs-note-link:hover {
+  text-shadow: 0 0 12px rgba(124, 255, 0, 0.6);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .brand-pkgs-section { padding: 80px 28px 88px; }
+  .brand-pkgs-grid { gap: 16px; }
+  .brand-pkg-card--popular { transform: translateY(0); }
+  .brand-pkg-card--popular:hover { transform: translateY(-8px); }
+}
+
+@media (max-width: 768px) {
+  .brand-pkgs-section { padding: 64px 20px 72px; }
+  .brand-pkgs-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .brand-pkgs-header { margin-bottom: 48px; }
+}
+
+@media (max-width: 480px) {
+  .brand-pkg-card { padding: 28px 20px 24px; }
+}

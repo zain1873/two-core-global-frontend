@@ -9,7 +9,7 @@ import Contact from "../components/contactForm";
 import TestimonialSlider from "../components/Testimonials";
 import CTASection from "../components/CtaSection";
 import StickySideBy from "../components/StickySideby";
-const tcgBanner = "/assets/tcg-banner.jpg";
+const tcgBanner = "/assets/about%20banner.png";
 
 function AboutPage() {
   return (

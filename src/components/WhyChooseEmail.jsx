@@ -54,13 +54,6 @@ export default function WhyChooseEmail() {
             }}
           >
             <div
-              className="absolute inset-0 z-0"
-              style={{
-                background: "var(--color-accent)",
-                opacity: 0.07,
-                borderRadius: "60% 40% 55% 45% / 50% 60% 40% 50%",
-                transform: "scale(1.08) translate(4%, 2%)",
-              }}
             />
             <img
               src="/assets/email-marketing-sidebar.png"

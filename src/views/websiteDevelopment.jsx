@@ -3,6 +3,7 @@
 import React from "react";
 import "../css/PagesCss/webDev.css";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import DevelopmentCards from "../components/DevelopmentCards";
@@ -29,7 +30,7 @@ function WebsiteDevelopment() {
           <div className="banner-content">
             <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Website Development" }]} />
             <h1>Building Seamless Experiences</h1>
-            <button className="banner-btn">Make Your Website</button>
+            <Link to="/contact" className="banner-btn">Make Your Website</Link>
           </div>
         </div>
       </section>

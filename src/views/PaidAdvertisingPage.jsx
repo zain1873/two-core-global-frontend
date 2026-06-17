@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
@@ -35,7 +36,7 @@ function PaidAdvertisingPage() {
               items={[{ label: "Home", to: "/" }, { label: "Paid Advertising" }]}
             />
             <h1>High-Performance Paid Advertising Services</h1>
-            <button className="banner-btn">Start Your Campaign</button>
+            <Link to="/contact" className="banner-btn">Start Your Campaign</Link>
           </div>
         </div>
       </section>

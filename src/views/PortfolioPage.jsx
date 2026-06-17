@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
@@ -196,7 +197,7 @@ export default function PortfolioPage() {
           <div className="banner-content">
             <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Portfolio" }]} />
             <h1>Our Work Speaks for Itself</h1>
-            <button className="banner-btn">Start Your Project</button>
+            <Link to="/contact" className="banner-btn">Start Your Project</Link>
           </div>
         </div>
       </section>

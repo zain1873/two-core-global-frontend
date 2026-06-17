@@ -3,6 +3,7 @@
 import React from "react";
 import "../css/PagesCss/webDev.css";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import AppDevelopmentCards from "../components/AppDevlopmentCards";
@@ -25,7 +26,7 @@ function AppDevelopment() {
           <div className="banner-content">
             <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "App Development" }]} />
             <h1>Custom Mobile Apps for Tomorrow</h1>
-            <button className="banner-btn">Make Your Website</button>
+            <Link to="/contact" className="banner-btn">Make Your Website</Link>
           </div>
         </div>
       </section>

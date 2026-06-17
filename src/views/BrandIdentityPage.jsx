@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
@@ -39,7 +40,7 @@ function BrandIdentityPage() {
             <p className="brand-banner-sub">
               Strategic branding that builds recognition, earns trust, and sets you apart in every market.
             </p>
-            <button className="banner-btn">Build Your Brand</button>
+            <Link to="/contact" className="banner-btn">Build Your Brand</Link>
           </div>
         </div>
       </section>

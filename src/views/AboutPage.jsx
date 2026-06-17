@@ -3,6 +3,7 @@
 import React from "react";
 import "../css/PagesCss/webDev.css";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
@@ -23,7 +24,7 @@ function AboutPage() {
           <div className="banner-content">
             <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "About" }]} />
             <h1>About Our Company</h1>
-            <button className="banner-btn">Make Your Website</button>
+            <Link to="/contact" className="banner-btn">Make Your Website</Link>
           </div>
         </div>
       </section>

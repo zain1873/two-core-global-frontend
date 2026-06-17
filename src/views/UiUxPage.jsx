@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
@@ -40,7 +41,7 @@ function UiUxPage() {
             <p className="banner-sub">
               Crafting intuitive, beautiful digital experiences that users love and businesses trust.
             </p>
-            <button className="banner-btn">Start Your Project</button>
+            <Link to="/contact" className="banner-btn">Start Your Project</Link>
           </div>
         </div>
       </section>

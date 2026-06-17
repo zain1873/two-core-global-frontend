@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "../components/navbar";
+import { Link } from "@/lib/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 import Contact from "../components/contactForm";
@@ -24,7 +25,7 @@ function SeoSection() {
           <div className="banner-content">
             <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "SEM" }]} />
             <h1>Leading Global Sem Services Company</h1>
-            <button className="banner-btn">Make Your Website</button>
+            <Link to="/contact" className="banner-btn">Make Your Website</Link>
           </div>
         </div>
       </section>

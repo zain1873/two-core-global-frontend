@@ -14,6 +14,13 @@ const noorrixProjectImg = "/assets/noorrix-project.png";
 const cycleProjectImg = "/assets/cycle-project.jpeg";
 const parallelProjectImg = "/assets/paralell-project.jpeg";
 const workoutProjectImg = "/assets/workout-project.jpg";
+const jocoImg = "/assets/joco.png";
+const helmImg = "/assets/helm.png";
+const megLogisticsImg = "/assets/meg-logistics.png";
+const futureClinicImg = "/assets/future-clinic.png";
+const patientCareImg = "/assets/patient-care-system.png";
+const cutsAndBruisesImg = "/assets/cuts%20and%20bruises.png";
+const georginaBexonImg = "/assets/georgina-bexon.png";
 
 const PROJECTS = [
   {
@@ -21,20 +28,75 @@ const PROJECTS = [
     title: "Noorrix Motors",
     year: "2025",
     category: "Web Development",
-    tags: [ "Web Development"],
+    tags: ["Web Development"],
     image: noorrixProjectImg,
     link: "https://www.noorrixmotors.co.uk/",
   },
   {
     id: 1,
-    title: "Nova Finance",
+    title: "JOCO Cups",
     year: "2025",
     category: "Web Development",
-    tags: ["Fintech", "Web Development"],
-    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800&q=80&fit=crop",
+    tags: ["Ecommerce", "Web Development"],
+    image: jocoImg,
+    link: "https://jococups.com/",
   },
   {
     id: 2,
+    title: "Helm Boots",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Ecommerce", "Web Development"],
+    image: helmImg,
+    link: "https://helmboots.com/",
+  },
+  {
+    id: 3,
+    title: "MEG Logistics",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Logistics", "Web Development"],
+    image: megLogisticsImg,
+    link: "https://www.meglogistic.com/",
+  },
+  {
+    id: 4,
+    title: "Future Clinic",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Healthcare", "Web Development"],
+    image: futureClinicImg,
+    link: "https://futureclinic.com/",
+  },
+  {
+    id: 5,
+    title: "Humwell — Patient Care System",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Healthcare", "Web App"],
+    image: patientCareImg,
+    link: "https://www.humwell.com/",
+  },
+  {
+    id: 6,
+    title: "Cuts & Bruises Barbershop",
+    year: "2024",
+    category: "Design & Branding",
+    tags: ["Brand Identity", "Web Development"],
+    image: cutsAndBruisesImg,
+    link: "https://www.cutsandbruisesbarbershop.com/",
+  },
+  {
+    id: 7,
+    title: "Georgina Bexon",
+    year: "2024",
+    category: "Design & Branding",
+    tags: ["UI/UX", "Portfolio"],
+    image: georginaBexonImg,
+    link: "https://georginabexon.com/",
+  },
+  {
+    id: 8,
     title: "Pure Cycles",
     year: "2025",
     category: "Design & Branding",
@@ -43,7 +105,7 @@ const PROJECTS = [
     link: "https://www.purecycles.com/",
   },
   {
-    id: 3,
+    id: 9,
     title: "Parallel",
     year: "2024",
     category: "Web Development",
@@ -52,77 +114,13 @@ const PROJECTS = [
     link: "https://www.useparallel.com/",
   },
   {
-    id: 4,
+    id: 10,
     title: "8fit",
     year: "2024",
     category: "Mobile App",
     tags: ["Development", "Mobile App"],
     image: workoutProjectImg,
     link: "https://apps.apple.com/us/app/8fit-workouts-meal-planner/id866617777",
-  },
-  {
-    id: 5,
-    title: "EcoMarket",
-    year: "2025",
-    category: "Web Development",
-    tags: ["Ecommerce", "Web Development"],
-    image: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=800&q=80&fit=crop",
-  },
-  {
-    id: 6,
-    title: "BrandPulse",
-    year: "2024",
-    category: "Digital Marketing",
-    tags: ["Social Media", "Marketing"],
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80&fit=crop",
-  },
-  {
-    id: 7,
-    title: "RankUp Agency",
-    year: "2025",
-    category: "Digital Marketing",
-    tags: ["SEO", "Content Strategy"],
-    image: "https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?w=800&q=80&fit=crop",
-  },
-  {
-    id: 8,
-    title: "ByteForge",
-    year: "2024",
-    category: "Mobile App",
-    tags: ["Mobile App", "UI/UX"],
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80&fit=crop",
-  },
-  {
-    id: 9,
-    title: "TrustLayer",
-    year: "2023",
-    category: "Web Development",
-    tags: ["Software Dev", "Security"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop",
-  },
-  {
-    id: 10,
-    title: "NeonKicks",
-    year: "2025",
-    category: "Design & Branding",
-    tags: ["Ecommerce", "Brand Identity"],
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80&fit=crop",
-  },
-  {
-    id: 11,
-    title: "DataFlow",
-    year: "2024",
-    category: "Web Development",
-    tags: ["Analytics", "Dashboard"],
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&q=80&fit=crop",
-  },
-  {
-    id: 12,
-    title: "LocalPro",
-    year: "2023",
-    category: "Digital Marketing",
-    tags: ["SEO", "Local Business"],
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80&fit=crop",
   },
 ];
 

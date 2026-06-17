@@ -88,7 +88,9 @@ function ServiceCard({ label, title, description, image, alt }) {
 
         {/* CTA — always visible */}
         <div className="service-card__cta-wrap">
+        <a href="/contact">
           <button className="service-card__cta">Get in Touch</button>
+        </a>
         </div>
       </div>
     </div>

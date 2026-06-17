@@ -1,7 +1,4 @@
 "use client";
-
-
-
 import '../css/developmentCards.css';
 
 const SERVICES = [

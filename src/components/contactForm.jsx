@@ -18,6 +18,9 @@ const HEAR_OPTIONS = [
 export default function ConnectForm() {
   const [selectedInterests, setSelectedInterests] = useState(["Other"]);
   const [selectedBudget, setSelectedBudget] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -38,9 +41,51 @@ export default function ConnectForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", { ...formData, selectedInterests, selectedBudget });
-    alert("Form submitted successfully!");
+  const handleSubmit = async () => {
+    setSubmitting(true);
+    setSubmitError("");
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          full_name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          company_name: formData.companyName,
+          designation: formData.designation,
+          hear_about: formData.hearAbout,
+          message: formData.message,
+          interests: selectedInterests,
+          budget: selectedBudget,
+        }),
+      });
+
+      if (!res.ok) {
+        const errors = await res.json().catch(() => null);
+        console.error("Contact form validation error:", errors);
+        setSubmitError("Something went wrong. Please check the form and try again.");
+        return;
+      }
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        companyName: "",
+        designation: "",
+        hearAbout: "",
+        message: "",
+      });
+      setSelectedInterests(["Other"]);
+      setSelectedBudget(null);
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Contact form network error:", err);
+      setSubmitError("Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -169,8 +214,14 @@ export default function ConnectForm() {
         </div>
 
         {/* Submit */}
-        <button className="submit-btn" onClick={handleSubmit} type="button">
-          Submit
+        {submitted && (
+          <p className="form-status form-status-success">
+            ✓ Form submitted successfully! We'll get back to you soon.
+          </p>
+        )}
+        {submitError && <p className="form-status form-status-error">{submitError}</p>}
+        <button className="submit-btn" onClick={handleSubmit} type="button" disabled={submitting}>
+          {submitting ? "Submitting..." : "Submit"}
         </button>
       </div>
     </div>

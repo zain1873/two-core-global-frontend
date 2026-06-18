@@ -260,6 +260,28 @@
   width: 100%;
 }
 
+/* Form status messages */
+.form-status {
+  width: 100%;
+  margin: 0 0 0.9rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-status-success {
+  color: var(--color-primary);
+  background: rgba(124, 255, 0, 0.08);
+  border: 1px solid rgba(124, 255, 0, 0.3);
+}
+
+.form-status-error {
+  color: #ff5c5c;
+  background: rgba(255, 92, 92, 0.08);
+  border: 1px solid rgba(255, 92, 92, 0.3);
+}
+
 /* Submit Button */
 .submit-btn {
   width: auto;
@@ -278,6 +300,11 @@
   overflow: hidden;
   z-index: 1;
   transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .submit-btn::before {

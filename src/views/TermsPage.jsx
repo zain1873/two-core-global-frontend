@@ -7,7 +7,7 @@ import Navbar from "../components/navbar";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
 
-const banner = "/assets/tcg-banner.jpg";
+const banner = "/assets/terms-banner.jpg";
 const LAST_UPDATED = "June 16, 2026";
 
 function TermsPage() {

@@ -111,6 +111,15 @@ export const routes = [
     priority: 0.6,
   },
   {
+    path: "/blog",
+    file: "BlogPage",
+    title: "Blog | Web, Marketing & Design Insights | Two Core Global",
+    description:
+      "Ideas and insights from Two Core Global on web development, SEO, growth marketing, branding and design — straight from the projects we ship every week.",
+    keywords: ["digital agency blog", "web development blog", "SEO tips", "marketing insights", "design trends"],
+    priority: 0.6,
+  },
+  {
     path: "/portfolio",
     file: "PortfolioPage",
     title: "Portfolio | Our Work & Case Studies | Two Core Global",

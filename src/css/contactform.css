@@ -350,6 +350,19 @@
   margin-bottom: 0.2rem;
 }
 
+/* Required field validation */
+.connect-input.invalid,
+.connect-select.invalid {
+  border-bottom-color: #ff5c5c;
+}
+
+.field-error {
+  display: block;
+  color: #ff5c5c;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .connect-card {
     padding: 0;

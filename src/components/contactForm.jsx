@@ -21,6 +21,7 @@ export default function ConnectForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [fieldErrors, setFieldErrors] = useState({});
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -39,9 +40,28 @@ export default function ConnectForm() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (fieldErrors[e.target.name]) {
+      setFieldErrors({ ...fieldErrors, [e.target.name]: "" });
+    }
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.fullName.trim()) errors.fullName = "Full name is required.";
+    if (!formData.email.trim()) errors.email = "Email is required.";
+    if (!formData.phone.trim()) errors.phone = "Phone is required.";
+    if (!formData.hearAbout.trim()) errors.hearAbout = "Please let us know how you heard about us.";
+    return errors;
   };
 
   const handleSubmit = async () => {
+    const errors = validate();
+    if (Object.keys(errors).length > 0) {
+      setFieldErrors(errors);
+      setSubmitError("Please fill in all required fields.");
+      return;
+    }
+    setFieldErrors({});
     setSubmitting(true);
     setSubmitError("");
     try {
@@ -97,37 +117,43 @@ export default function ConnectForm() {
         {/* Full Name */}
         <div className="field-group">
           <input
-            className="connect-input"
+            className={`connect-input${fieldErrors.fullName ? " invalid" : ""}`}
             type="text"
             name="fullName"
-            placeholder="Full name"
+            placeholder="Full name *"
+            required
             value={formData.fullName}
             onChange={handleChange}
           />
+          {fieldErrors.fullName && <span className="field-error">{fieldErrors.fullName}</span>}
         </div>
 
         {/* Email */}
         <div className="field-group">
           <input
-            className="connect-input"
+            className={`connect-input${fieldErrors.email ? " invalid" : ""}`}
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Email *"
+            required
             value={formData.email}
             onChange={handleChange}
           />
+          {fieldErrors.email && <span className="field-error">{fieldErrors.email}</span>}
         </div>
 
         {/* Phone */}
         <div className="field-group">
           <input
-            className="connect-input"
+            className={`connect-input${fieldErrors.phone ? " invalid" : ""}`}
             type="tel"
             name="phone"
-            placeholder="Phone"
+            placeholder="Phone *"
+            required
             value={formData.phone}
             onChange={handleChange}
           />
+          {fieldErrors.phone && <span className="field-error">{fieldErrors.phone}</span>}
         </div>
 
         {/* Company Name */}
@@ -157,18 +183,20 @@ export default function ConnectForm() {
         {/* How did you hear about us */}
         <div className="select-wrapper">
           <select
-            className="connect-select"
+            className={`connect-select${fieldErrors.hearAbout ? " invalid" : ""}`}
             name="hearAbout"
+            required
             value={formData.hearAbout}
             onChange={handleChange}
           >
             {HEAR_OPTIONS.map((opt) => (
               <option key={opt} value={opt === "How did you hear about us" ? "" : opt}>
-                {opt}
+                {opt === "How did you hear about us" ? `${opt} *` : opt}
               </option>
             ))}
           </select>
           <span className="select-arrow">▾</span>
+          {fieldErrors.hearAbout && <span className="field-error">{fieldErrors.hearAbout}</span>}
         </div>
 
         {/* Message */}

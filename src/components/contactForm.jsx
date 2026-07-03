@@ -148,7 +148,7 @@ export default function ConnectForm() {
             className={`connect-input${fieldErrors.phone ? " invalid" : ""}`}
             type="tel"
             name="phone"
-            placeholder="Phone *"
+            placeholder="Phone/Whatsapp *"
             required
             value={formData.phone}
             onChange={handleChange}

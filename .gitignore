@@ -31,3 +31,6 @@ next-env.d.ts
 # one-time migration artifacts — not needed in the repo
 MIGRATION_REPORT.md
 /scripts/
+
+.vercel
+.env*

@@ -206,19 +206,6 @@ export default function BlogPage() {
 
         {featured && <FeaturedPost post={featured} />}
 
-        <div className="bl-filters" data-aos="fade-up">
-          {CATEGORIES.map((cat) => (
-            <button
-              key={cat}
-              className={`bl-filter-btn${activeFilter === cat ? " active" : ""}`}
-              onClick={() => setActiveFilter(cat)}
-              type="button"
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
         <div className="bl-grid">
           {filtered.length > 0 ? (
             filtered.map((post, i) => <BlogCard key={post.slug} post={post} index={i} />)

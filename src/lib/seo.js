@@ -192,6 +192,24 @@ export const routes = [
     priority: 0.8,
   },
   {
+    path: "/career",
+    file: "CareerPage",
+    title: "Careers | Join the Two Core Global Team",
+    description:
+      "Join Two Core Global and shape the future of digital experiences. Explore open positions across engineering, design, and marketing. Impact-driven work, collaborative culture, and growth opportunities await.",
+    keywords: ["careers", "jobs", "digital agency jobs", "web development careers", "design jobs", "marketing jobs", "Two Core Global careers"],
+    priority: 0.7,
+  },
+  {
+    path: "/industry-insights",
+    file: "IndustryInsightsPage",
+    title: "Industry Insights | Trends, Research & Intelligence | Two Core Global",
+    description:
+      "Data-backed industry insights, emerging trends, and strategic intelligence across web development, SEO, marketing, design, and technology — curated by Two Core Global.",
+    keywords: ["industry insights", "digital trends", "market research", "web development trends", "SEO insights", "marketing intelligence", "Two Core Global"],
+    priority: 0.7,
+  },
+  {
     path: "/privacy-policy",
     file: "PrivacyPolicyPage",
     title: "Privacy Policy | Two Core Global",

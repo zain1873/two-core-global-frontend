@@ -53,14 +53,14 @@ const Footer = () => {
         </div>
 
         <div className="footer__columns">
-          <div className="footer__col">
+          <div className="footer__col"> 
             <h4 className="footer__col-title">Who We Are</h4>
             <ul className="footer__col-list">
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/about">Our Team</Link></li>
-              <li><Link to="/contact">Careers</Link></li>
+              <li><Link to="/career">Careers</Link></li>
               <li><Link to="/portfolio">Case Studies</Link></li>
-              <li><Link to="/about">Testimonials</Link></li>
+              <li><Link to="/testimonials">Testimonials</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             <h4 className="footer__col-title">Insights & Resources</h4>
             <ul className="footer__col-list">
               <li><Link to="/blog">Blog</Link></li>
-              <li><a href="#industry-insights">Industry Insights</a></li>
+              <li><Link to="/industry-insights">Industry Insights</Link></li>
               <li><a href="#faqs">FAQs</a></li>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions">Terms &amp; Conditions</Link></li>

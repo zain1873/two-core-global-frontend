@@ -59,7 +59,7 @@ const Footer = () => {
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/about">Our Team</Link></li>
               <li><Link to="/career">Careers</Link></li>
-              <li><Link to="/portfolio">Case Studies</Link></li>
+              {/* <li><Link to="/portfolio">Case Studies</Link></li> */}
               <li><Link to="/testimonials">Testimonials</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
-              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="/pricing">Pricing</a></li>
               <li><Link to="/contact">Get a Quote</Link></li>
               <li><Link to="/contact">Book a Call</Link></li>
             </ul>

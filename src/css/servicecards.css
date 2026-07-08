@@ -266,3 +266,16 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 400px) {
+  .ss-card {
+    flex-direction: column;
+    padding: 20px 12px;
+}
+
+@media (max-width: 380px) {
+  .ss-title span {
+    font-size: 20px !important;
+  }
+} 
+} 

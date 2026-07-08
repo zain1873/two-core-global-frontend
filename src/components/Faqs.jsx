@@ -995,7 +995,7 @@ const styles = `
     font-size: 15px;
     font-weight: 700;
     color: var(--color-heading);
-    margin-bottom: 2px;
+    margin-bottom:2px;
   }
 
   .fq-contact-text span {

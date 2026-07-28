@@ -30,7 +30,7 @@ const PROJECTS = [
   {
     id: 0,
     title: "Noorrix Motors",
-    year: "2025",
+    year: "2026",
     category: "Web Development",
     tags: ["Web Development"],
     image: noorrixProjectImg,
@@ -57,7 +57,7 @@ const PROJECTS = [
   {
     id: 3,
     title: "MEG Logistics",
-    year: "2025",
+    year: "2026",
     category: "Web Development",
     tags: ["Logistics", "Web Development"],
     image: megLogisticsImg,
@@ -129,7 +129,7 @@ const PROJECTS = [
   {
     id: 11,
     title: "Elan Aesthetic Studio",
-    year: "2025",
+    year: "2026",
     category: "Web Development",
     tags: ["Web Development"],
     image: elanPortfolioImg,
@@ -138,7 +138,7 @@ const PROJECTS = [
   {
     id: 12,
     title: "Liquids Skincare",
-    year: "2025",
+    year: "2026",
     category: "Web Development",
     tags: ["Web Development"],
     image: liquidsSkincareImg,
@@ -146,7 +146,7 @@ const PROJECTS = [
   {
     id: 13,
     title: "Lumora",
-    year: "2025",
+    year: "2026",
     category: "Web Development",
     tags: ["Web Development"],
     image: lumoraPortfolioImg,

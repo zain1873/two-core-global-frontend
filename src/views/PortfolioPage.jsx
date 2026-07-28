@@ -22,6 +22,7 @@ const futureClinicImg = "/assets/future-clinic.png";
 const patientCareImg = "/assets/patient-care-system.png";
 const cutsAndBruisesImg = "/assets/cuts%20and%20bruises.png";
 const georginaBexonImg = "/assets/georgina-bexon.png";
+const elanPortfolioImg = "/assets/elan-portfolio-img.png";
 
 const PROJECTS = [
   {
@@ -122,6 +123,15 @@ const PROJECTS = [
     tags: ["Development", "Mobile App"],
     image: workoutProjectImg,
     link: "https://apps.apple.com/us/app/8fit-workouts-meal-planner/id866617777",
+  },
+  {
+    id: 11,
+    title: "Elan Aesthetic Studio",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Web Development"],
+    image: elanPortfolioImg,
+    link: "https://elan-aesthetic-studio.vercel.app/",
   },
 ];
 

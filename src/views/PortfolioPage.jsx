@@ -23,6 +23,8 @@ const patientCareImg = "/assets/patient-care-system.png";
 const cutsAndBruisesImg = "/assets/cuts%20and%20bruises.png";
 const georginaBexonImg = "/assets/georgina-bexon.png";
 const elanPortfolioImg = "/assets/elan-portfolio-img.png";
+const liquidsSkincareImg = "/assets/liquids-skincare-portfolio.png";
+const lumoraPortfolioImg = "/assets/lumora-portfolio-img.png";
 
 const PROJECTS = [
   {
@@ -132,6 +134,22 @@ const PROJECTS = [
     tags: ["Web Development"],
     image: elanPortfolioImg,
     link: "https://elan-aesthetic-studio.vercel.app/",
+  },
+  {
+    id: 12,
+    title: "Liquids Skincare",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Web Development"],
+    image: liquidsSkincareImg,
+  },
+  {
+    id: 13,
+    title: "Lumora",
+    year: "2025",
+    category: "Web Development",
+    tags: ["Web Development"],
+    image: lumoraPortfolioImg,
   },
 ];
 

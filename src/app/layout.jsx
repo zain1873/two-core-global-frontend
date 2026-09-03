@@ -16,6 +16,9 @@ export const metadata = {
     shortcut: "/tcg-favicon.jpeg",
     apple: "/tcg-favicon.jpeg",
   },
+  verification: {
+    google: "BObk4aokt-XL_v-SpgOnUU3UVn8Nt48sMUf_zTC_ZvE",
+  },
   openGraph: {
     type: "website",
     siteName: siteConfig.name,

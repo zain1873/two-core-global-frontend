@@ -17,7 +17,7 @@ const reasons = [
         <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
       </svg>
     ),
-    title: "Strategy Before Design",
+    title: "Strategy Before Designs",
     desc: "We root every visual decision in research, positioning, and your audience — not trends.",
   },
   {
